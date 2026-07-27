@@ -64,10 +64,12 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .muted { color: var(--slate); font-size: .93rem; }
 
 /* ---------- logo ---------- */
-/* nav uses the impact-lines variant: letterforms are only 70% of the image
-   height, so 54px here reads the same size as the 38px plain wordmark. */
+/* Nav uses logo-nav-lockup.png: a compact variant where the descriptor pill
+   is scaled ~1.55x relative to the wordmark so the small type survives at
+   header size. Do not swap in logo-lockup.png here, its descriptor renders
+   under 4px and turns to mush. */
 .logo { display: block; width: auto; height: auto; }
-.logo--nav  { height: 54px; }
+.logo--nav  { height: 58px; }
 .logo--foot { height: 74px; }
 @media (max-width: 720px) {
   .logo--nav  { height: 44px; }
@@ -122,7 +124,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
-.nav__in { display: flex; align-items: center; gap: 28px; height: 76px; }
+.nav__in { display: flex; align-items: center; gap: 28px; height: 88px; }
 .nav__logo { text-decoration: none; flex: none; line-height: 0; }
 .nav nav { display: flex; gap: 26px; margin-left: auto; }
 .nav nav a {
@@ -195,7 +197,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 /* ---------- generic section ---------- */
-.sec { padding: clamp(64px, 8.5vw, 116px) 0; }
+.sec { padding: clamp(64px, 8.5vw, 116px) 0; scroll-margin-top: 96px; }
 .sec__h {
   font-size: clamp(2.05rem, 4.3vw, 3.15rem);
   font-weight: 700; letter-spacing: -.028em; max-width: 17em;
@@ -297,7 +299,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
    ========================================================================= */
 .est { padding: clamp(46px, 6vw, 84px) 0 clamp(64px, 8vw, 104px); }
 .est__in { display: grid; grid-template-columns: .92fr 1.08fr; gap: clamp(36px, 5.5vw, 76px); align-items: start; }
-.est__intro { position: sticky; top: 108px; }
+.est__intro { position: sticky; top: 120px; }
 .est__h1 {
   font-size: clamp(2.5rem, 5.2vw, 3.7rem); font-weight: 800;
   letter-spacing: -.033em; margin-bottom: 18px;
@@ -365,7 +367,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 @media (max-width: 720px) {
   body { font-size: 16px; }
-  .nav__in { height: 66px; gap: 14px; }
+  .nav__in { height: 70px; gap: 14px; }
   .nav nav { display: none; }
   .grid { grid-template-columns: 1fr; }
   .foot__top { grid-template-columns: 1fr; gap: 30px; }
