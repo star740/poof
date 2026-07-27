@@ -64,11 +64,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .muted { color: var(--slate); font-size: .93rem; }
 
 /* ---------- logo ---------- */
+/* nav uses the impact-lines variant: letterforms are only 70% of the image
+   height, so 54px here reads the same size as the 38px plain wordmark. */
 .logo { display: block; width: auto; height: auto; }
-.logo--nav  { height: 38px; }
+.logo--nav  { height: 54px; }
 .logo--foot { height: 74px; }
 @media (max-width: 720px) {
-  .logo--nav  { height: 31px; }
+  .logo--nav  { height: 44px; }
   .logo--foot { height: 62px; }
 }
 

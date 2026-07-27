@@ -72,11 +72,11 @@ def logo(variant="nav"):
     foot = full lockup with the JUNK REMOVAL & CLEANOUTS pill
     """
     src = {
-        "nav":  ("assets/logo-wordmark.png", "POOF"),
+        "nav":  ("assets/logo-wordmark-elements.png", "POOF"),
         "foot": ("assets/logo-lockup.png", "POOF Junk Removal & Cleanouts"),
     }[variant]
     return (f'<img class="logo logo--{variant}" src="{src[0]}?v={VERSION}" '
-            f'alt="{src[1]}" width="1041" height="420">'
+            f'alt="{src[1]}" width="954" height="460">'
             if variant == "nav" else
             f'<img class="logo logo--{variant}" src="{src[0]}?v={VERSION}" '
             f'alt="{src[1]}" width="963" height="520">')
