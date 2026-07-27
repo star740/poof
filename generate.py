@@ -144,8 +144,8 @@ STEPS = [
     ("Tell us what's going",
      "Describe it in a sentence or send a photo of the pile. That's enough for us to price it."),
     ("We confirm and schedule",
-     "You get a firm arrival window and a firm number before anyone touches anything."),
-    ("Poof &mdash; it's gone",
+     "You get an arrival window and a price before anyone touches anything."),
+    ("Poof, it's gone",
      "We load, sweep the space, and sort the load for donation and recycling on the way out."),
 ]
 
@@ -223,7 +223,7 @@ def home():
       <p class="sec__foot">
         Also taken: mattresses, electronics, exercise equipment, hot tubs, yard
         waste, and renovation debris. If you're unsure whether something
-        qualifies, ask &mdash; the answer is usually yes.
+        qualifies, just ask. The answer is usually yes.
       </p>
     </div>
   </section>
@@ -231,7 +231,7 @@ def home():
   <section class="sec sec--dark" id="how">
     <div class="wrap">
       <p class="eyebrow">How it works</p>
-      <h2 class="sec__h">Three steps, and you're done.</h2>
+      <h2 class="sec__h">We make it disappear in three steps.</h2>
       <ol class="steps">
 {steps}
       </ol>
@@ -245,8 +245,8 @@ def home():
         <h2 class="sec__h">The landfill is our last stop, not our first.</h2>
         <p class="lede">
           Most junk removal ends at a transfer station because that's the fast
-          option. We sort every load first &mdash; furniture and household goods
-          to local donation partners, metal and electronics to recycling, and
+          option. We sort every load first. Furniture and household goods go to
+          local donation partners, metal and electronics go to recycling, and
           only what's genuinely spent goes to disposal.
         </p>
         <p class="muted">
@@ -269,14 +269,14 @@ def home():
 {areas}
       </ul>
       <p class="sec__foot">
-        Outside this list? Call us anyway &mdash; we travel for larger jobs.
+        Outside this list? Call us anyway. We travel for larger jobs.
       </p>
     </div>
   </section>
 
   <section class="cta">
     <div class="wrap cta__in">
-      <h2>Ready to get it out of there?</h2>
+      <h2>Let's make it disappear.</h2>
       <p>Send a description or a photo. We'll send back a number.</p>
       <div class="cta__btns">
         <a class="btn btn--dark btn--lg" href="estimate.html">Get an estimate</a>
@@ -309,7 +309,7 @@ def estimate():
         <h1 class="est__h1">Tell us what's going.</h1>
         <p class="lede">
           The more you tell us, the tighter the number. A photo of the pile
-          does more than any list &mdash; upload one if you can.
+          does more than any list, so upload one if you can.
         </p>
         <div class="notice">
           <h2>This is an estimate, not a quote</h2>
@@ -338,9 +338,9 @@ def estimate():
               <label for="pieces">Roughly how many pieces</label>
               <select id="pieces" name="pieces">
                 <option value="">Select</option>
-                <option>1&ndash;3 items</option>
-                <option>4&ndash;10 items</option>
-                <option>11&ndash;25 items</option>
+                <option>1-3 items</option>
+                <option>4-10 items</option>
+                <option>11-25 items</option>
                 <option>26+ items</option>
                 <option>Full room or more</option>
                 <option>Whole property</option>
