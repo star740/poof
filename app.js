@@ -65,7 +65,8 @@
       status.innerHTML =
         "<strong>The instant estimator isn't switched on yet.</strong><br>" +
         "This form isn't sending anywhere while we finish building it, so nothing " +
-        "was submitted. Call us and we'll price it over the phone in a couple of minutes.";
+        "was submitted. Call or text us instead, photos included, and we'll price " +
+        "it in a couple of minutes.";
     });
   }
 })();

@@ -26,6 +26,8 @@ SITE = {
     "secondary_tagline": "Clean Spaces. Happy Faces.",
     "phone": "(000) 000-0000",          # PLACEHOLDER - Google Voice number pending
     "phone_href": "tel:+10000000000",   # PLACEHOLDER
+    "sms_href": "sms:+10000000000",     # PLACEHOLDER - Google Voice supports SMS
+    "contact_verb": "Call or text",
     "email": "hello@example.com",       # PLACEHOLDER - domain not registered yet
     "base_zip": "20151",
     "region": "Northern Virginia",
@@ -91,7 +93,7 @@ def nav(active=""):
       <a href="index.html#area"{cls("area")}>Service area</a>
       <a href="estimate.html"{cls("estimate")}>Get an estimate</a>
     </nav>
-    <a class="btn btn--sm nav__call" href="{SITE['phone_href']}">{SITE['phone']}</a>
+    <a class="btn btn--sm nav__call" href="{SITE['phone_href']}"><span class="nav__call-label">{SITE['contact_verb']}</span> {SITE['phone']}</a>
   </div>
 </header>
 """
@@ -109,6 +111,7 @@ def footer():
       <div class="foot__col">
         <h3>Get in touch</h3>
         <p><a href="{SITE['phone_href']}">{SITE['phone']}</a></p>
+        <p class="muted">Call or text, including photos</p>
         <p><a href="mailto:{SITE['email']}">{SITE['email']}</a></p>
         <p class="muted">Serving {SITE['region']}</p>
       </div>
@@ -150,7 +153,7 @@ SERVICES = [
 
 STEPS = [
     ("Tell us what's going",
-     "Describe it in a sentence or send a photo of the pile. That's enough for us to price it."),
+     "Describe it in a sentence, or just text us a photo of the pile. That's enough for us to price it."),
     ("We confirm and schedule",
      "You get an arrival window and a price before anyone touches anything."),
     ("Poof, it's gone",
@@ -195,8 +198,12 @@ def home():
         </p>
         <div class="hero__cta">
           <a class="btn btn--lg" href="estimate.html">Get an estimate</a>
-          <a class="btn btn--ghost btn--lg" href="{SITE['phone_href']}">Call {SITE['phone']}</a>
+          <a class="btn btn--ghost btn--lg" href="{SITE['phone_href']}">{SITE['contact_verb']} {SITE['phone']}</a>
         </div>
+        <p class="hero__text-note">
+          Faster still: text photos of the pile to that same number and we'll
+          price it from there.
+        </p>
       </div>
 
       <aside class="starter" aria-labelledby="starter-h">
@@ -277,7 +284,7 @@ def home():
 {areas}
       </ul>
       <p class="sec__foot">
-        Outside this list? Call us anyway. We travel for larger jobs.
+        Outside this list? Call or text us anyway. We travel for larger jobs.
       </p>
     </div>
   </section>
@@ -285,10 +292,10 @@ def home():
   <section class="cta">
     <div class="wrap cta__in">
       <h2>Let's make it disappear.</h2>
-      <p>Send a description or a photo. We'll send back a number.</p>
+      <p>Call or text us a photo of the pile. We'll send a price back.</p>
       <div class="cta__btns">
         <a class="btn btn--dark btn--lg" href="estimate.html">Get an estimate</a>
-        <a class="btn btn--ghost-dark btn--lg" href="{SITE['phone_href']}">Call {SITE['phone']}</a>
+        <a class="btn btn--ghost-dark btn--lg" href="{SITE['phone_href']}">{SITE['contact_verb']} {SITE['phone']}</a>
       </div>
     </div>
   </section>
@@ -318,6 +325,11 @@ def estimate():
         <p class="lede">
           The more you tell us, the tighter the number. A photo of the pile
           does more than any list, so upload one if you can.
+        </p>
+        <p class="est__text-alt">
+          Rather not fill in a form? {SITE['contact_verb']} us at
+          <a href="{SITE['phone_href']}">{SITE['phone']}</a> and send your
+          photos straight over. Same answer, fewer steps.
         </p>
         <div class="notice">
           <h2>This is an estimate, not a quote</h2>

@@ -130,6 +130,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .nav nav a:hover, .nav nav a.on { color: var(--ink); border-bottom-color: var(--yellow); }
 .nav__call { flex: none; }
+.nav__call-label { }
+@media (max-width: 1080px) { .nav__call-label { display: none; } }
 
 /* ---------- hero ---------- */
 .hero { padding: clamp(52px, 8vw, 104px) 0 clamp(48px, 6vw, 84px); }
@@ -147,6 +149,15 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: var(--ink-soft); max-width: 30em; margin-bottom: 30px;
 }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero__text-note {
+  margin-top: 18px; font-size: .93rem; color: var(--slate); max-width: 34em;
+  padding-left: 15px; border-left: 3px solid var(--yellow);
+}
+.est__text-alt {
+  margin-top: 16px; font-size: .95rem; color: var(--slate);
+  padding-left: 15px; border-left: 3px solid var(--yellow);
+}
+.est__text-alt a { font-weight: 600; color: var(--ink); }
 
 .starter {
   background: var(--paper);
