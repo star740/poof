@@ -4,10 +4,12 @@
    ========================================================================= */
 
 :root {
-  /* Brand colors, sampled from the brand sheet */
-  --yellow:      #F8B914;
-  --yellow-deep: #DFA200;
-  --yellow-soft: #FDF0CC;
+  /* Brand colors. Yellow is Signal Gold #F5C518, chosen 2026-07 over the
+     original #F8B914 (too orange) and Canva default #FFDE59 (too light).
+     Logo outline is black #14120F, NOT navy. */
+  --yellow:      #F5C518;
+  --yellow-deep: #D5A809;
+  --yellow-soft: #FCF2CF;
   --ink:         #14120F;
   --ink-soft:    #3A352E;
   --slate:       #6E675C;
