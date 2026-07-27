@@ -23,7 +23,7 @@ SITE = {
     "name": "POOF",
     "full_name": "POOF Junk Removal & Cleanouts",
     "tagline": "Poof, it's gone.",
-    "secondary_tagline": "Clean Spaces. Happy Faces.",
+    "secondary_tagline": "We make your junk disappear.",
     "phone": "(000) 000-0000",          # PLACEHOLDER - Google Voice number pending
     "phone_href": "tel:+10000000000",   # PLACEHOLDER
     "sms_href": "sms:+10000000000",     # PLACEHOLDER - Google Voice supports SMS
