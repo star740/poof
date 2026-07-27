@@ -31,15 +31,19 @@ SITE = {
     "email": "hello@example.com",       # PLACEHOLDER - domain not registered yet
     "base_zip": "20151",
     "region": "Northern Virginia",
+    "region_long": "Northern Virginia and the I-95 corridor",
     "base_city": "Chantilly / Fairfax",
 }
 
 VERSION = str(int(time.time()))
 
+# Grouped so the corridor south reads as deliberate rather than scattered.
 SERVICE_AREAS = [
     "Chantilly", "Fairfax", "Centreville", "Oakton", "Vienna", "McLean",
     "Great Falls", "Reston", "Herndon", "Falls Church", "Arlington",
     "Burke", "Springfield", "Alexandria", "Sterling", "Ashburn",
+    "Lorton", "Manassas", "Woodbridge", "Dumfries", "Stafford",
+    "Fredericksburg", "Spotsylvania",
 ]
 
 
@@ -113,7 +117,7 @@ def footer():
         <p><a href="{SITE['phone_href']}">{SITE['phone']}</a></p>
         <p class="muted">Call or text, including photos</p>
         <p><a href="mailto:{SITE['email']}">{SITE['email']}</a></p>
-        <p class="muted">Serving {SITE['region']}</p>
+        <p class="muted">Serving {SITE['region_long']}</p>
       </div>
       <div class="foot__col">
         <h3>Pages</h3>
@@ -123,7 +127,7 @@ def footer():
       </div>
     </div>
     <p class="foot__areas">{areas}</p>
-    <p class="foot__legal">&copy; {time.strftime('%Y')} {SITE['full_name']}. Based in {SITE['base_city']}, VA.</p>
+    <p class="foot__legal">&copy; {time.strftime('%Y')} {SITE['full_name']}. Serving Virginia.</p>
   </div>
 </footer>
 <script src="app.js?v={VERSION}"></script>
@@ -181,8 +185,9 @@ def home():
 
     return head(
         f"{SITE['full_name']} | {SITE['region']}",
-        "Premium junk removal and cleanouts across Northern Virginia. Garages, "
-        "basements, estates, and commercial properties. Donation and recycling first.",
+        "Premium junk removal and cleanouts across Northern Virginia and south "
+        "to Fredericksburg. Garages, basements, estates, and commercial "
+        "properties. Donation and recycling first.",
     ) + nav() + f"""
 <main id="main">
 
@@ -279,7 +284,7 @@ def home():
   <section class="sec" id="area">
     <div class="wrap">
       <p class="eyebrow">Service area</p>
-      <h2 class="sec__h">Based in Chantilly. Working across {SITE['region']}.</h2>
+      <h2 class="sec__h">Across Northern Virginia, and south to Fredericksburg.</h2>
       <ul class="areas">
 {areas}
       </ul>
@@ -420,7 +425,7 @@ def estimate():
               <label for="zip">ZIP code</label>
               <input type="text" id="zip" name="zip" inputmode="numeric"
                      maxlength="5" placeholder="20151" autocomplete="postal-code">
-              <p class="hint">Used for travel distance from Chantilly.</p>
+              <p class="hint">Used to work out travel distance.</p>
             </div>
             <div class="field">
               <label for="when">When do you need it gone</label>
