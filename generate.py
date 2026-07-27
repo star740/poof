@@ -55,7 +55,7 @@ def head(title, description, page_class=""):
 <meta name="description" content="{_html.escape(description)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v={VERSION}">
 </head>
 <body>
@@ -63,13 +63,21 @@ def head(title, description, page_class=""):
 """
 
 
-def logo(size="nav"):
-    """Placeholder wordmark rendered in CSS.
+def logo(variant="nav"):
+    """Real logo files, exported from the Canva source.
 
-    TEMPORARY: swap this for the real logo file once lettering is finalized.
-    Replace the inner markup with <img src="assets/logo.svg" alt="POOF">.
+    nav  = wordmark only (POOF, no descriptor) for the sticky header
+    foot = full lockup with the JUNK REMOVAL & CLEANOUTS pill
     """
-    return f'<span class="logo logo--{size}" aria-label="POOF">POOF</span>'
+    src = {
+        "nav":  ("assets/logo-wordmark.png", "POOF"),
+        "foot": ("assets/logo-lockup.png", "POOF Junk Removal & Cleanouts"),
+    }[variant]
+    return (f'<img class="logo logo--{variant}" src="{src[0]}?v={VERSION}" '
+            f'alt="{src[1]}" width="1041" height="420">'
+            if variant == "nav" else
+            f'<img class="logo logo--{variant}" src="{src[0]}?v={VERSION}" '
+            f'alt="{src[1]}" width="963" height="520">')
 
 
 def nav(active=""):
