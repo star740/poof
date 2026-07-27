@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="page-estimate">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get an estimate | POOF Junk Removal &amp; Cleanouts</title>
+<meta name="description" content="Describe what needs to go and get a ballpark estimate for junk removal in Northern Virginia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=Fredoka:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=1785114399">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="nav__logo" href="index.html"><span class="logo logo--nav" aria-label="POOF">POOF</span></a>
+    <nav aria-label="Main">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#area">Service area</a>
+      <a href="estimate.html" class="on">Get an estimate</a>
+    </nav>
+    <a class="btn btn--sm nav__call" href="tel:+10000000000">(000) 000-0000</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="est">
+    <div class="wrap est__in">
+
+      <div class="est__intro">
+        <p class="eyebrow">Instant estimate</p>
+        <h1 class="est__h1">Tell us what's going.</h1>
+        <p class="lede">
+          The more you tell us, the tighter the number. A photo of the pile
+          does more than any list &mdash; upload one if you can.
+        </p>
+        <div class="notice">
+          <h2>This is an estimate, not a quote</h2>
+          <p>
+            It's a ballpark based on what you describe. The final price is
+            confirmed on site, before any work starts and before you owe
+            anything.
+          </p>
+        </div>
+      </div>
+
+      <form class="est__form" id="estimate-form" novalidate>
+
+        <fieldset>
+          <legend>What needs to go</legend>
+
+          <div class="field">
+            <label for="items">Describe the items</label>
+            <textarea id="items" name="items" rows="4" required
+              placeholder="A sectional sofa, two dressers, a mattress, and roughly ten boxes"></textarea>
+            <p class="hint">Rough is fine. Piece counts and rough sizes help most.</p>
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="pieces">Roughly how many pieces</label>
+              <select id="pieces" name="pieces">
+                <option value="">Select</option>
+                <option>1&ndash;3 items</option>
+                <option>4&ndash;10 items</option>
+                <option>11&ndash;25 items</option>
+                <option>26+ items</option>
+                <option>Full room or more</option>
+                <option>Whole property</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="space">Where is it</label>
+              <select id="space" name="space">
+                <option value="">Select</option>
+                <option>Garage</option>
+                <option>Basement</option>
+                <option>Attic</option>
+                <option>Single room</option>
+                <option>Whole house</option>
+                <option>Yard or driveway</option>
+                <option>Office or commercial space</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="access">Anything that makes it harder to get out?</label>
+            <select id="access" name="access">
+              <option value="">Select</option>
+              <option>Ground floor, easy access</option>
+              <option>Stairs involved</option>
+              <option>Long carry to the truck</option>
+              <option>Needs disassembly</option>
+              <option>Elevator building</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="photos">Photos <span class="opt">optional</span></label>
+            <input type="file" id="photos" name="photos" accept="image/*" multiple>
+            <p class="hint">A wide shot of the whole space beats close-ups.</p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Where to send it</legend>
+          <div class="row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label for="zip">ZIP code</label>
+              <input type="text" id="zip" name="zip" inputmode="numeric"
+                     maxlength="5" placeholder="20151" autocomplete="postal-code">
+              <p class="hint">Used for travel distance from Chantilly.</p>
+            </div>
+            <div class="field">
+              <label for="when">When do you need it gone</label>
+              <select id="when" name="when">
+                <option value="">Select</option>
+                <option>As soon as possible</option>
+                <option>This week</option>
+                <option>Next week</option>
+                <option>Just planning ahead</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <button class="btn btn--lg btn--full" type="submit">Send me my estimate</button>
+        <p class="est__fine">
+          We use your email to send the estimate and follow up once. Nothing else.
+        </p>
+
+        <div class="status" id="form-status" role="status" aria-live="polite"></div>
+      </form>
+
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__top">
+      <div class="foot__brand">
+        <span class="logo logo--foot" aria-label="POOF">POOF</span>
+        <p class="foot__tag">Clean Spaces. Happy Faces.</p>
+      </div>
+      <div class="foot__col">
+        <h3>Get in touch</h3>
+        <p><a href="tel:+10000000000">(000) 000-0000</a></p>
+        <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p class="muted">Serving Northern Virginia</p>
+      </div>
+      <div class="foot__col">
+        <h3>Pages</h3>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="index.html#services">Services</a></p>
+        <p><a href="estimate.html">Get an estimate</a></p>
+      </div>
+    </div>
+    <p class="foot__areas">Chantilly &middot; Fairfax &middot; Centreville &middot; Oakton &middot; Vienna &middot; McLean &middot; Great Falls &middot; Reston &middot; Herndon &middot; Falls Church &middot; Arlington &middot; Burke &middot; Springfield &middot; Alexandria &middot; Sterling &middot; Ashburn</p>
+    <p class="foot__legal">&copy; 2026 POOF Junk Removal & Cleanouts. Based in Chantilly / Fairfax, VA.</p>
+  </div>
+</footer>
+<script src="app.js?v=1785114399"></script>
+</body>
+</html>
