@@ -325,6 +325,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   font-family: var(--display); font-size: 1.28rem; font-weight: 700;
   padding: 0 0 16px; letter-spacing: -.016em;
 }
+.legend-note {
+  font-size: .89rem; color: var(--slate);
+  margin: -8px 0 20px;
+}
 .field { margin-bottom: 20px; }
 .field label {
   display: block; font-size: .91rem; font-weight: 600; margin-bottom: 7px;

@@ -401,7 +401,10 @@ def estimate():
         </fieldset>
 
         <fieldset>
-          <legend>Where to send it</legend>
+          <legend>Where to send your estimate</legend>
+          <p class="legend-note">
+            We'll email it to you. The ZIP and timing help us price it accurately.
+          </p>
           <div class="row">
             <div class="field">
               <label for="name">Name</label>
