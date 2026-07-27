@@ -76,7 +76,7 @@ def logo(variant="nav"):
         "foot": ("assets/logo-lockup.png", "POOF Junk Removal & Cleanouts"),
     }[variant]
     return (f'<img class="logo logo--{variant}" src="{src[0]}?v={VERSION}" '
-            f'alt="{src[1]}" width="886" height="520">'
+            f'alt="{src[1]}" width="1031" height="560">'
             if variant == "nav" else
             f'<img class="logo logo--{variant}" src="{src[0]}?v={VERSION}" '
             f'alt="{src[1]}" width="963" height="520">')
