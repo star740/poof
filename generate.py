@@ -194,9 +194,8 @@ def home():
         <p class="eyebrow">{SITE['region']}</p>
         <h1 class="hero__h1">Poof,<br>it's gone.</h1>
         <p class="hero__sub">
-          Junk removal and full-property cleanouts for homes, estates, and
-          commercial spaces. We do the carrying, the loading, and the sorting.
-          You point at what's going.
+          Junk removal and full-property cleanouts, for homes and businesses.
+          One item or the whole building.
         </p>
         <div class="hero__cta">
           <a class="btn btn--lg" href="estimate.html">Get an estimate</a>
