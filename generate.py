@@ -195,7 +195,7 @@ def home():
         <h1 class="hero__h1">Poof,<br>it's gone.</h1>
         <p class="hero__sub">
           Junk removal and full-property cleanouts, for homes and businesses.
-          One item or the whole building.
+          One item or the whole building. We make your junk disappear.
         </p>
         <div class="hero__cta">
           <a class="btn btn--lg" href="estimate.html">Get an estimate</a>
