@@ -19,8 +19,9 @@ git add -A && git commit -m "..." && git push origin main
 
 ## Outstanding
 
-- Real phone number (Google Voice): currently a placeholder
-- Real email + domain: currently a placeholder
+Contact details are LIVE and real: (703) 755-0838 and poof.help@gmail.com.
+Do not replace these with placeholders.
+
 - Logo file: nav/footer wordmark is CSS-rendered placeholder
 - Estimator backend (Cloudflare Worker holding the API key): form is inert
 - Pricing inputs: truck rental, dump fees per ton, minimum charge

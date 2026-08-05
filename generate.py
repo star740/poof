@@ -16,19 +16,16 @@ import html as _html
 # ---------------------------------------------------------------------------
 # SITE CONSTANTS
 # ---------------------------------------------------------------------------
-# NOTE: PHONE and EMAIL below are PLACEHOLDERS. They are not real and must be
-# replaced before this site is promoted anywhere. Search for "PLACEHOLDER".
-
 SITE = {
     "name": "POOF",
     "full_name": "POOF Junk Removal & Cleanouts",
     "tagline": "Poof, it's gone.",
     "secondary_tagline": "We make your junk disappear.",
-    "phone": "(000) 000-0000",          # PLACEHOLDER - Google Voice number pending
-    "phone_href": "tel:+10000000000",   # PLACEHOLDER
-    "sms_href": "sms:+10000000000",     # PLACEHOLDER - Google Voice supports SMS
+    "phone": "(703) 755-0838",
+    "phone_href": "tel:+17037550838",
+    "sms_href": "sms:+17037550838",
     "contact_verb": "Call or text",
-    "email": "hello@example.com",       # PLACEHOLDER - domain not registered yet
+    "email": "poof.help@gmail.com",
     "base_zip": "20151",
     "region": "Northern Virginia",
     "base_city": "Chantilly / Fairfax",
