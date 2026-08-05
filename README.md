@@ -19,7 +19,7 @@ git add -A && git commit -m "..." && git push origin main
 
 ## Outstanding
 
-Contact details are LIVE and real: (703) 755-0838 and poof.help@gmail.com.
+Contact details are LIVE and real: (571) 490-2098 and poof.help@gmail.com.
 Do not replace these with placeholders.
 
 - Logo file: nav/footer wordmark is CSS-rendered placeholder
